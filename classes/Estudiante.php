@@ -1,5 +1,10 @@
 <?php
-    class Estudiante {
+require_once '../interfaces/Operaciones.php';
+
+    class Estudiante implements Operaciones{
+    	
+    	private $schema="estudiantes";
+    	private $table="estudiantes_datos_academicos";
     	private $cedula;
 		private $primer_apellido;
 		private $segundo_apellido;
@@ -95,6 +100,26 @@
 		
 		public function getCedula(){
 			return $this->cedula;
+		}
+		
+		public function insert(){
+			
+		}
+		
+		public function update(){
+			
+		}
+		
+		public function delete(){
+			
+		}
+		
+		public function find($id){
+			
+		}
+		
+		public function findBy($condicion){
+			
 		}
     }
 ?>
